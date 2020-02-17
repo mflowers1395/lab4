@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title> Volunteer Fill-Out Form </title>
-  </head>
-  <body>
-    <h1> Volunteer Fill-Out Form </h1> 
-     <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST"> 
-       
-       <fieldset>
-         <legend> Personal Information </legend>
-       <p> <label for="name">First Name:</label>
-        <input type="text" name="first_name_field" required> </p>
-       
-        <p> <label for="name">Last Name:</label>
-         <input type="text" name="last_name_field" required> </p>
-       
-         <p> <label for="name">Phone Number:</label>
-         <input type="text" name="phone_field" required> </p>
-       
-          <p> <label for="email">Email:</label>
-            <input type="email" name="email_field"  
-              required> </p>
-       
-       <p> Gender
-         <input type="radio" name="gender_field" value="Female">
-        <label for="Female">Female</label>
-         
-       
-        <input type="radio"  name="gender_field" value="Male">
-        <label for="Male">Male</label>
-       </p>
-         
-         <label> Please Select Your Age Range </label>
-         <select id = "myList" name="age_field">
-           <option value = " ">     </option>
-           <option value = "18-29">18-29</option>
-           <option value = "30-49">30-49</option>
-           <option value = "50-69">50-69</option>
-           <option value = "70-89">70-89</option>
-           <option value = "90-100">90-100</option>
-         </select>
-         
-      </fieldset>
-       
-       <fieldset>
-         <legend> Availability </legend> 
-         
-         <p> <input type="checkbox" name="available_field[]" value="Sunday"><label>Sunday </p>
-           
-            <p> <input type="checkbox" name="available_field[]" value="Monday"><label>Monday</p>
-              
-               <p> <input type="checkbox" name="available_field[]" value="Tuesday"><label>Tuesday</p>
-                 
-                  <p> <input type="checkbox" name="available_field[]" value="Wednesday"><label>Wednesday</p>
-                    
-                     <p> <input type="checkbox" name="available_field[]" value="Thursday"><label>Thursday</p>
-                       
-                        <p> <input type="checkbox" name="available_field[]" value="Friday"><label>Friday</p>
-                          
-                           <p> <input type="checkbox" name="available_field[]" value="Saturday"><label>Saturday</p>
-         
-          
-         
-          
-         
-         <h3> Comments </h3>
-         <textarea rows="20" cols="30" name = "comments_field"> </textarea>
-         
-         <input type="hidden" name="hidden_field" value="mflowers1">
-       </fieldset>
-       <p> </p>
-       <input type="submit" value="Send Form">
-      
-    </form>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title> Volunteer Fill-Out Form </title>
+</head>
+<body>
+  <h1> Volunteer Fill-Out Form </h1> 
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST"> 
+    
+  <fieldset>
+  <legend> Personal Information </legend>
+  <p> <label for="name">First Name:</label>
+  <input type="text" name="first_name_field" required> </p>
+  <p> <label for="name">Last Name:</label>
+  <input type="text" name="last_name_field" required> </p>
+  <p> <label for="name">Phone Number:</label>
+  <input type="text" name="phone_field" required> </p>
+  <p> <label for="email">Email:</label>
+  <input type="email" name="email_field" required> </p>
+    
+  <p> Gender
+  <input type="radio" name="gender_field" value="Female">
+  <label for="Female">Female</label>
+  <input type="radio"  name="gender_field" value="Male">
+  <label for="Male">Male</label>
+   </p>
+    
+   <label> Please Select Your Age Range </label>
+   <select id = "myList" name="age_field">
+   <option value = " ">     </option>
+   <option value = "18-29">18-29</option>
+   <option value = "30-49">30-49</option>
+   <option value = "50-69">50-69</option>
+   <option value = "70-89">70-89</option>
+   <option value = "90-100">90-100</option>
+   </select>
+   </fieldset>
+    
+   <fieldset>
+   <legend> Availability </legend> 
+   <p> <input type="checkbox" name="available_field[]" value="Sunday"><label>Sunday </p>
+   <p> <input type="checkbox" name="available_field[]" value="Monday"><label>Monday</p>
+   <p> <input type="checkbox" name="available_field[]" value="Tuesday"><label>Tuesday</p>
+   <p> <input type="checkbox" name="available_field[]" value="Wednesday"><label>Wednesday</p>
+   <p> <input type="checkbox" name="available_field[]" value="Thursday"><label>Thursday</p>
+   <p> <input type="checkbox" name="available_field[]" value="Friday"><label>Friday</p>
+   <p> <input type="checkbox" name="available_field[]" value="Saturday"><label>Saturday</p>
+   <h3> Comments </h3>
+   <textarea rows="20" cols="30" name = "comments_field"> </textarea>
+   <input type="hidden" name="hidden_field" value="mflowers1">
+   </fieldset>
+   <p> </p>
+   <input type="submit" value="Send Form">
+   </form>
+</body>
 </html>
